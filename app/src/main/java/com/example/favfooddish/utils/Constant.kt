@@ -21,7 +21,7 @@ object Constant {
     const val API_ENDPOINT: String = "recipes/random"
 
     // API KEY VALUE from the spoonacular console.
-    const val API_KEY_VALUE: String = "d80d518a55ea4b8aaf3cc52269eec2be"
+    const val API_KEY_VALUE: String = "Paste Your api key here"
 
     // KEY PARAMS
     const val API_KEY: String = "apiKey"
