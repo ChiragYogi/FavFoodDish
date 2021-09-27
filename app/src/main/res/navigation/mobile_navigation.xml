@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_all_dishes">
+
+    <fragment
+        android:id="@+id/navigation_all_dishes"
+        android:name="com.example.favfooddish.ui.fragment.AllDishesFragment"
+        android:label="@string/all_dishes"
+        tools:layout="@layout/fragment_all_dishes" >
+        <action
+            android:id="@+id/action_navigation_all_dishes_to_dishDetailsFragment"
+            app:destination="@id/dishDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.example.favfooddish.ui.fragment.FavoriteDishFragment"
+        android:label="@string/favorite"
+        tools:layout="@layout/fragment_favorite_dish" >
+        <action
+            android:id="@+id/action_navigation_favorite_to_dishDetailsFragment"
+            app:destination="@id/dishDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_random_dish"
+        android:name="com.example.favfooddish.ui.fragment.RandomDishFragment"
+        android:label="@string/random_dish"
+        tools:layout="@layout/fragment_random_dish" />
+    <fragment
+        android:id="@+id/dishDetailsFragment"
+        android:name="com.example.favfooddish.ui.fragment.DishDetailsFragment"
+        android:label="@string/dish_ditails_labal"
+        tools:layout="@layout/fragment_dish_details">
+
+        <argument android:name="dishDetails"
+            app:argType="com.example.favfooddish.model.entites.FavDish"/>
+
+    </fragment>
+</navigation>

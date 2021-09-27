@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="text_input_style" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintAnimationEnabled">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/_16sdp</item>
+        <item name="android:layout_marginStart">@dimen/_16sdp</item>
+        <item name="android:layout_marginTop">@dimen/_16sdp</item>
+        <item name="hintTextColor">@color/blue_grey_700</item>
+    </style>
+
+    <style name="text_input_style_ingredient" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="android:layout_height">@dimen/_100sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_16sdp</item>
+        <item name="android:layout_marginStart">@dimen/_16sdp</item>
+        <item name="android:layout_marginTop">@dimen/_16sdp</item>
+        <item name="hintTextColor">@color/blue_grey_700</item>
+    </style>
+
+    <style name="text_input_layout_edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColor">@color/grey_900</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+    </style>
+
+    <style name="text_input_layout_edit_text_ingredient">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColor">@color/grey_900</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/_16sdp</item>
+        <item name="android:layout_marginRight">@dimen/_16sdp</item>
+        <item name="android:layout_marginTop">@dimen/_16sdp</item>
+    </style>
+</resources>
